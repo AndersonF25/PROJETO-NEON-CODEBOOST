@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon-16x16.png"image/x-icon">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Api slides -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Projeto Neon</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="" class="logo">
+          <img src="img/neon.svg" alt="" />
+        </a>    
+        <ul class="list-itens">
+          <li><a href="#" class="itens">Produtos</a></li>
+          <li><a href="#" class="itens">Conta digital PJ</a></li>
+          <li><a href="#" class="itens">Quem somos</a></li>
+          <li><a href="#" class="itens">Blog</a></li>
+          <li><a href="#" class="btn">Abra sua conta digital</a></li>                   
+        </ul>
+        <button onclick="animar()" id="btn-menu" class="btn-mobile">
+          <span class="linha"></span>
+          <span class="linha"></span>
+          <span class="linha"></span>
+      </div>
+    </header>
+
+     <section class="s-hero" id="hero">
+      <div class="container">
+        <nav class="itens-menu" id="nav" onclick="animar()">
+          <a href="#">Produtos</a>
+          <a href="#">Conta digital PJ</a>
+          <a href="#">Quem somos</a>
+          <a href="#">Blog</a>
+          <button class="conta">Abra sua conta</button>
+        </nav>
+        <div class="info">
+          <h3 class="hidden" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">Abra sua conta, é só baixar o app!</h3>
+          <h1 class="hidden" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1500">A conta digital certa pra cuidar do seu dinheiro</h1>
+          <button class="btn-primary hidden" data-aos="fade-left" data-aos-delay="350" data-aos-duration="1500">Abra sua conta digital</button>
+
+          <div class="icons-info">
+            <ul>
+              <li class="container-icon">
+                <div class="icon" data-aos="fade-up" data-aos-delay="220" data-aos-duration="1500">
+                  <i class="fa-solid fa-credit-card" style="color: #ffffff"></i>
+                </div>
+                <span data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">Cartão sem anuidade</span>
+              </li>
+
+              <li class="container-icon">
+                <div class="icon" data-aos="fade-up" data-aos-delay="220" data-aos-duration="1500" >
+                  <i class="fa-solid fa-0" style="color: #ffffff"></i>
+                </div>
+
+                <span data-aos="fade-up" data-aos-delay="350" data-aos-duration="1500">Conta digital 100% grátis</span>
+              </li>
+
+              <li class="container-icon">
+                <div class="icon" data-aos="fade-up" data-aos-delay="220" data-aos-duration="1500">
+                  <i class="fa-solid fa-dollar-sign" style="color: #ffffff"></i>
+                </div>
+                <span data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500">Seu dinheiro rendendo mais</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="details-img">
+          <h3 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">Banco 100% digital</h3>
+          <div class="container-img">
+            <img src="img/logo-cortado.png" class="bg-icon" alt="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500"/>
+            <img src="img/cartao.png" class="card-bg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="s-card">
+      <div class="container">
+        <div class="container-left">
+          <div class="phone">
+            <img src="img/circulo.png" alt="bg-circle" class="bg-circle" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500"/>
+            <img src="img/cel-neon.png" alt="cel-neon" class="bg-phone" data-aos="fade-down" data-aos-delay="70" data-aos-duration="1500" />
+          </div>
+          <div class="download-app">
+            <img src="img/icon-logo.png" alt="" class="logo" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500"/>
+            <h3 data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">Baixe nosso app</h3>
+            <p data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">
+              que tal abrir uma conta digital para ver como a gente faz sua vida
+              muito mais simples?
+            </p>
+            <a href=""
+              ><img src="img/app-download.png" alt="" class="download" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500"
+            /></a>
+          </div>
+        </div>
+
+        <div class="container-right">
+          <div class="info-card" >
+            <h3 data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">Resolve sua vida direto pelo app Neon!</h3>
+            <ul>
+              <li>
+                <div class="container-img" data-aos="fade-down-right" data-aos-delay="70" data-aos-duration="1500">
+                  <img src="img/card-icon.svg" alt=""  />
+                </div>
+
+                <div class="conteudo-list">
+                  <span data-aos="fade-down" data-aos-delay="50" data-aos-duration="1500"> Cartão de crédito sem anuidade</span>
+                  <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
+                    conta digital com cartão de crédito sem anuidade e sem
+                    complicação
+                  </p>
+                </div>
+                <img src="img/arrow.svg" alt="" class="arrow" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1500"/>
+              </li>
+
+              <li>
+                <div class="container-img-2" data-aos="fade-right" data-aos-delay="70" data-aos-duration="1500">
+                  <img src="img/percentage-icon.svg" alt="" />
+                </div>
+
+                <div class="conteudo-list">
+                  <span data-aos="fade-down" data-aos-delay="50" data-aos-duration="1500">Sem taxas</span>
+                  <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
+                    Transferências, boletos de depósito e outros serviços
+                    gratuitos
+                  </p>
+                </div>
+                <img src="img/arrow.svg" alt="" class="arrow" data-aos="fade-down" data-aos-delay="250" data-aos-duration="1500" />
+              </li>
+
+              <li>
+                <div class="container-img-3" data-aos="fade-up-right" data-aos-delay="70" data-aos-duration="1500">
+                  <img src="img/dolar-icon.svg" alt="" />
+                </div>
+
+                <div class="conteudo-list">
+                  <span data-aos="fade-down" data-aos-delay="50" data-aos-duration="1500">Mais investimentos</span>
+                  <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">Rendem mais que a poupança e você resgata quando quiser</p>
+                </div>
+                <img src="img/arrow.svg" alt="" class="arrow" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1500"/>
+              </li>
+            </ul>
+          </div>
+
+          <div class="neon-pj">
+            <div class="container-info-pj">
+              <h2 data-aos="fade-down-right" data-aos-delay="130" data-aos-duration="1500">Neon Pejota</h2>
+              <h3 data-aos="fade-right" data-aos-delay="130" data-aos-duration="1500">Contas digitais PJ gratuitas para decolar seu negócio!</h3>
+              <p data-aos="fade-right" data-aos-delay="130" data-aos-duration="1500">
+                As melhores contas para pagamentos, compras e receber seus
+                clientes.
+              </p>
+
+              <div class="buttons">
+                <button class="btn-primary" data-aos="fade-up-right" data-aos-delay="130" data-aos-duration="1500">
+                  <a href="#">Sou MEI</a>
+                </button>
+                <button class="btn-primary" data-aos="fade-up-left" data-aos-delay="130" data-aos-duration="1500">
+                  <a href="#">Sou ME</a>
+                </button>
+              </div>
+            </div>
+
+            <div class="img-card">
+              <img
+                src="img/card-mei-removebg-preview.png"
+                alt=""
+                class="card-mei" data-aos="fade-down" data-aos-delay="150" data-aos-duration="1500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-depoimentos">
+      <div class="container">
+        
+        <div class="top">
+          <h2 data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">
+            <span data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">Prático, fácil, moderno</span> Você resolve tudo sem estresse
+          </h2>
+          <div class="swiper-pagination""></div>
+        </div>
+
+        <div class="slider-depoimentos" >
+          <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+            <div class="swiper-slide" >
+              <div class="card-depoimento">
+                <div class="user">
+                  <strong>@marciogurkas</strong>
+                  <img src="img/logo-twitter.svg" alt="" />
+                </div>
+                <p>
+                  Valeu @banconeon! Linda embalagem e o cartão tbm é lindo!
+                  Muito amor por esse banco #bancoNeon
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-depoimento">
+                <div class="user">
+                  <strong>@gilbertokuhen</strong>
+                  <img src="img/logo-twitter.svg" alt="" />
+                </div>
+                <p>
+                  Esse banco era tudo que eu estava procurando, parabéns a todos
+                  envolvidos, nota 10 pra vocês! #bancoNeon
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-depoimento">
+                <div class="user">
+                  <strong>@angelafsc</strong>
+                  <img src="img/logo-twitter.svg" alt="" />
+                </div>
+                <p>
+                  Obrigado pela atenção e apoio com seus clientes, recomendo
+                  demais esse banco! #bancoNeon
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-depoimento">
+                <div class="user">
+                  <strong>@augustoprim</strong>
+                  <img src="img/logo-twitter.svg" alt="" />
+                </div>
+                <p>
+                  Nada a reclamar desse banco, está me satisfazendo com tudo que
+                  eu preciso, obrigado pela atenção conosco! #bancoNeon
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-depoimento">
+                <div class="user">
+                  <strong>@rogeriostroll</strong>
+                  <img src="img/logo-twitter.svg" alt="" />
+                </div>
+                <p>
+                  Atenção sem igual com seus clientes, muito feliz em fazer
+                  parte desse grande banco, obrigado! #bancoNeon
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-depoimento">
+                <div class="user">
+                  <strong>@andressapetri</strong>
+                  <img src="img/logo-twitter.svg" alt="" />
+                </div>
+                <p>
+                  O melhor banco que ja utilizei, não tem comparação, vocês são
+                  demais, parabéns a todos envolvidos nesse projeto incrível!
+                  #bancoNeon
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section class="s-conta-digital">
+      <div class="container">
+        <div class="container-info">
+          <h1 data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500">Aproveite</h1>
+          <h2 data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">Domine o seu dinheiro com uma conta 100% digital</h2>
+
+          <div class="list-icons">
+            <ul>
+              <li>
+                <div class="container-img" data-aos="fade-down-right" data-aos-delay="50" data-aos-duration="1700">
+                  <i class="fa-solid fa-credit-card" style="color: #ffffff"></i>
+                </div>
+
+                <div class="conteudo-list">
+                  <span data-aos="fade-down" data-aos-delay="50" data-aos-duration="1600">Cartão visa internacional</span>
+                  <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500"> 
+                    tenha facilidade e beneficios para o seu dia a dia.
+                  </p>
+                </div>
+             
+              </li>
+
+              <li>
+                <div class="container-img-2" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1700">
+                  <i class="fa-solid fa-0" style="color: #ffffff"></i>
+                </div>
+
+                <div class="conteudo-list">
+                  <span data-aos="fade-down" data-aos-delay="50" data-aos-duration="1600">Zero mensalidade e anuidade</span>
+                  <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
+                    não gaste grana pagando taxas desnecessárias.
+                  </p>
+                </div>
+                
+              </li>
+
+              <li>
+                <div class="container-img-3" data-aos="fade-up-right" data-aos-delay="50" data-aos-duration="1700">
+                  <i class="fa-solid fa-dollar-sign" style="color: #ffffff"></i>
+                </div>
+
+                <div class="conteudo-list">
+                  <span data-aos="fade-down" data-aos-delay="50" data-aos-duration="1600">Mais investimentos</span>
+                  <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">Rendem mais que a poupança e você resgata quando quiser.</p>
+                </div>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-img">
+          <img src="img/conta-digital.png" alt="" class="cel-conta" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1600">
+         
+        </div>
+      </div>
+    </section> 
+
+    <footer>
+      <div class="container-footer">
+        <div class="header-footer">
+          <img src="img/neon.svg" alt="">
+          <div class="icons-footer">
+            <p>Acompanhe nossas redes </p>
+            <ul>
+              <li>
+                <i class="fa-brands fa-youtube" style="color: #ffffff;"></i></li>
+
+              <li>
+                <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+              </li>
+
+              <li>
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+              </li>
+
+              <li>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+              </li>
+
+              <li>
+                <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container-infos">
+          <ul>
+            <li class="infos">
+              <span>Produtos Neon</span>
+              <p>Cartão de crédito</p>
+              <p>Cartão pré-pago</p>
+              <p>Neon mais</p>
+              <p>investimentos</p>
+              <p>Empréstimo</p>
+            </li>
+
+            <li class="infos">
+              <span>Conta digital PJ</span>
+              <p>Sou MEI</p>
+              <p>Sou ME</p>
+            </li>
+
+            <li class="infos">
+              <span>Blog</span>
+              <p>#focanodinheiro</p>
+              <p>o poder da comunidade</p>
+              <p>Desafio das 52 semanas</p>
+              <p>Planilha de gastos</p>
+            </li>
+
+            <li class="infos">
+              <span>Institucional</span>
+              <p>Conheça a Neon</p>
+              <p>Trabalhe conosco</p>
+              <p>Termos de uso</p>
+              <p>Politicas de privacidade</p>
+            </li>
+
+            <li class="infos">
+              <span>Ajuda</span>
+              <p>Ouvidoria</p>
+              <p>Fale conosco</p>
+            </li>
+
+            <li class="container-AI">
+              <div class="atendimento">
+                <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+                <div class="dados">
+                  <span>Atendimento:</span>
+                  <p>oi@neon.com.br (24 horas)</p>
+                </div>
+              </div>
+
+              <div class="imprensa">
+                <i class="fa-regular fa-message" style="color: #ffffff;"></i>
+                <div class="dados">
+                  <span>Imprensa:</span>
+                  <p>imprensa@neon.com.br</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer> 
+
+    <script
+      src="https://kit.fontawesome.com/d72f787b3f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="slides.js"></script>
+    <script src="menu-hamburguer.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="aos.js"></script>
+  
+  </body>
+</html>

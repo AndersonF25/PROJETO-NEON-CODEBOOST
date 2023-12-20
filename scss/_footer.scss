@@ -1,0 +1,174 @@
+footer {
+    width: 100%;
+    background-color: $bg;
+    margin-top: 3.75rem;
+  
+    .container-footer {
+      width: 100%;
+      max-width: 90rem;
+      margin: 0 auto;
+  
+      .header-footer {
+        width: 100%;
+  
+        @include flex-box(center, row, space-between);
+        border-bottom: 1px solid #f1f1f1;
+        padding: 55px 5px;
+        flex-wrap: wrap;
+  
+        img {
+          width: 120px;
+        }
+  
+        .icons-footer {
+          display: flex;
+          gap: 20px;
+  
+          p {
+            color: $clear;
+            font-size: 1rem;
+            opacity: 0.9;
+          }
+  
+          ul {
+            display: flex;
+            gap: 1.5625rem;
+          }
+        }
+      }
+  
+      .container-infos {
+        width: 100%;
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
+  
+        ul {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  
+          .infos {
+            width: 100%;
+  
+            padding-left: 0.3125rem;
+            @include flex-box(start, column, start);
+            gap: 0.625rem;
+  
+            span {
+              color: $clear;
+              font-weight: 600;
+            }
+  
+            p {
+              color: $clear;
+              opacity: 0.6;
+              font-size: 0.9rem;
+              font-weight: 300;
+              cursor: pointer;
+              transition: 0.4s;
+              &:hover {
+                opacity: 1;
+                transition: 0.4s;
+              }
+            }
+          }
+  
+          .container-AI {
+            width: 100%;
+  
+            .atendimento {
+              @include atendimento-imprensa;
+  
+              .dados {
+                width: 100%;
+  
+                span {
+                  @include span-AI;
+                }
+  
+                p {
+                  @include p-AI;
+                }
+              }
+            }
+  
+            .imprensa {
+              @include atendimento-imprensa;
+              .dados {
+                width: 100%;
+  
+                span {
+                  @include span-AI;
+                }
+                p {
+                  @include p-AI;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @include responsive(1512px){
+        .container-footer{
+            @include width-1200px;
+        }
+    }
+
+    @include responsive(1242px){
+        .container-footer{
+            @include width-900px;
+            padding: 0px 15px;
+
+            .container-infos{
+                ul{
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1.75rem 0;
+                }
+            }
+        }
+    }
+
+    @include responsive(972px){
+        .container-footer{
+            max-width: 45rem;
+
+            .header-footer{
+                @include flex-box(start,column,start);
+                gap: 35px;
+                padding: 35px 0;
+            }
+        }
+    }
+
+    @include responsive(568px){
+        .container-footer{
+            max-width: 22.5rem;
+
+            .header-footer{
+                .icons-footer{
+                    flex-direction: column;
+                    gap: 0.625rem;
+                }
+            }
+
+            .container-infos{
+                ul{
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 2.1875rem 1.25rem;
+                  
+                }
+            }
+        }
+    }
+
+    @include responsive(365px){
+        .container-footer{
+            .container-infos{
+                ul{
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+  }
