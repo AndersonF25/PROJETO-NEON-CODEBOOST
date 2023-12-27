@@ -138,13 +138,15 @@
     .itens-menu.ativo {
       display: block;
       position: absolute;
+      width: 100vw;
       top: -3px;
-      right: 10px;
-      transition: 0.4s;
-      @include flex-box(start, column, center);
+      right: 0px;
+      animation: drop-menu .8s forwards;
+     
+      @include flex-box(center, column, center);
       padding-left: 15px;
       gap: 12px;
-      border-radius: 10px;
+      
     }
   }
 
@@ -331,6 +333,17 @@
   }
   @include responsive(375px) {
     height: 152vh;
+  }
+
+  @keyframes drop-menu {
+    from{
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 .s-card {

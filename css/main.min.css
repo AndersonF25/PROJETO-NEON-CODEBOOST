@@ -243,16 +243,16 @@ header .container .list-itens li .btn:hover {
 .s-hero .container .itens-menu.ativo {
   display: block;
   position: absolute;
+  width: 100vw;
   top: -3px;
-  right: 10px;
-  transition: 0.4s;
+  right: 0px;
+  animation: drop-menu 0.8s forwards;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-left: 15px;
   gap: 12px;
-  border-radius: 10px;
 }
 @media (max-width: 1420px) {
   .s-hero .container {
@@ -412,6 +412,16 @@ header .container .list-itens li .btn:hover {
 @media (max-width: 375px) {
   .s-hero {
     height: 152vh;
+  }
+}
+@keyframes drop-menu {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
